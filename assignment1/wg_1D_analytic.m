@@ -1,9 +1,9 @@
+% finds the TE and TM effective indices of a 3-layer waveguide
+
 % usage:
 %  - get effective indices for supported modes:
-%  [nTE, nTM] = wg_1D_analytic (1.55e-6, 0.22e-6, 1.444, 3.47, 1.444)
+%  [nTE, nTM] = wg_1D_analytic2 (1.55e-6, 0.22e-6, 1.444, 3.47, 1.444)
 %  - TEparam,TMparam: h, q, p parameters of the mode.
-%计算一维波导结构的TE,TM模的有效折射率
-%依次输入参数:波长,厚度，上包层，芯层，下包层折射率
 
 function [nTE,nTM,TEparam,TMparam]=wg_1D_analytic (lambda, t, n1, n2, n3)
 k0 = 2*pi/lambda;
