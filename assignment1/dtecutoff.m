@@ -4,9 +4,9 @@
 % m, e.g.calculate dcutoff of TE1, m=1
 % usage: 
 % - get dcutoff of TE waveguide
-% - [d_cutoff] = dtemcutoff(1.45, 2.61, 1480,0);
+% - [d_cutoff] = dtecutoff(1.45, 2.61, 1480,1);
 
-function [d_cutoff] = dtemcutoff(n_clad, n_core, lambda,m)
+function [d_cutoff] = dtecutoff(n_clad, n_core, lambda,m)
 
 % calculate d_cutoff
 k0 = lambda / 2;

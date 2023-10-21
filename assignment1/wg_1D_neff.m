@@ -1,11 +1,11 @@
-% finds the TE and TM effective indices of a 3-layer waveguide
+% finds the TE and TM effective index of a 3-layer waveguide
 
 % usage:
-%  - get effective indices for supported modes:
-%  [nTE, nTM] = wg_1D_analytic2 (1.55e-6, 0.22e-6, 1.444, 3.47, 1.444)
+%  - get effective index for supported modes:
+%  [nTE, nTM] = wg_1D_neff (1.48e-6, 0.27e-6, 1.45, 2.61, 1.45)
 %  - TEparam,TMparam: h, q, p parameters of the mode.
 
-function [nTE,nTM,TEparam,TMparam]=wg_1D_analytic (lambda, t, n1, n2, n3)
+function [nTE,nTM,TEparam,TMparam]=wg_1D_neff (lambda, t, n1, n2, n3)
 k0 = 2*pi/lambda;
 b0 = linspace( max([n1 n3])*k0, n2*k0, 1000);   %k0*n3 < b < k0*n2
 b0 = b0(1:end-1);

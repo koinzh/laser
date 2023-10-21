@@ -5,10 +5,10 @@
 % considered here is a uniaxial channel waveguide with the
 % c-axis oriented at pi/4 relative to the x-y axes.
 
-n1 = 1.55;
-n2x = 2.156;
-n2y = 2.232;
-n2z = 2.232;
+n1 = 1.45;
+n2x = 2.61;
+n2y = 2.61;
+n2z = 2.61;
 theta = pi/4;
 
 e2xx = n2x^2*cos(theta)^2 + n2y^2*sin(theta)^2;
@@ -16,14 +16,14 @@ e2yy = n2y^2*cos(theta)^2 + n2x^2*sin(theta)^2;
 e2xy = cos(theta)*sin(theta)*(n2x^2-n2y^2);
 e2yx = e2xy;
 
-Rx = 0.30;
-Ry = 0.20;
+Rx = 0.545;
+Ry = 0.273;
 side = 0.20;
 
 dx = 0.0025;        % grid size (x)
 dy = dx;            % grid size (y)
 
-lambda = 1.00;      % wavelength
+lambda = 1.48;      % wavelength
 nmodes = 1;         % number of modes to compute
 
 fprintf (1,'generating index mesh...\n');
